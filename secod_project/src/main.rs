@@ -34,7 +34,7 @@ fn main() {
             println!("error with parsing your choice");
             0;
         }
-    }
+    };
 
 
 
