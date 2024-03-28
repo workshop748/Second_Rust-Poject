@@ -10,6 +10,27 @@ impl num{
         self.getNum=String::new();
 
     }
+    fn add(x:u32,y:u32)->u32
+    {
+x+y
+    }
+    fn subtract(x:u32,y:u32)->u32
+    {
+x-y
+    }
+    fn multi(x:u32,y:u32)->u32
+    {
+x*y
+    }
+    fn div(x:u32,y:u32) -> Option<u32>
+    {
+
+if y == 0x0{
+    None
+}else {
+    Some(x/y)
+}
+    }
 
 }
 
@@ -27,6 +48,27 @@ fn main() {
     let parse_int = match resault{
         Ok(integer) =>
         {
+            
+            match(integer)
+            {
+                0x1 =>{
+// this is foraddition
+                }
+                0x2=>{
+//this is for  subtraction
+                }
+                0x3=>{
+// this is for multiplication
+                }
+                0x4=>{
+//this is for division
+                }
+                _ =>{
+                    println!("Error you did not enter a valid option")
+                
+                }
+
+            }
 //going to prefore the calculator in this option
         }
         Err(e)=>
