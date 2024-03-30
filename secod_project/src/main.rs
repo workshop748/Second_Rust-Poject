@@ -8,6 +8,7 @@ impl num{
     fn CollectNum(&mut self)
     {
         self.getNum=String::new();
+        io::stdin().read_line(&mut self.getNum);
 
     }
     fn add(x:u32,y:u32)->u32
@@ -43,8 +44,10 @@ fn main() {
     4. division\n
  ");
     io::stdin().read_line(&mut option).expect("Failed to read line");
+    println!("{}",option);
     
     let resault:Result<u32, _> =option.parse();
+    //println!("{}",resault);
     let parse_int = match resault{
         Ok(integer) =>
         {
@@ -52,7 +55,7 @@ fn main() {
             match(integer)
             {
                 0x1 =>{
-// this is foraddition
+// this is for addition
                 }
                 0x2=>{
 //this is for  subtraction
